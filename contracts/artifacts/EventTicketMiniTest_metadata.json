@@ -4,7 +4,77 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ticketPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ticketUnits",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTicket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getGrandTotal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumberOfPurcahse",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalNumberOfTickets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +103,11 @@
 	},
 	"sources": {
 		"contracts/First.sol": {
-			"keccak256": "0x540b56b8a6baec30e765f13755b3828ba944020727a9cbe042e83cec826face0",
+			"keccak256": "0x0373c637e5330c2e72f5cf84f967cbcf09aad509025e5d6d2198c10e3b387610",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7edc7b98ed55e7b17a20c0aac9fe83cc976c07140930b3010903c9a15c6a5d73",
-				"dweb:/ipfs/QmTpBvFdhcXNpKvthbegs3YnW8oa4cXvibY4vywXLiHaqi"
+				"bzz-raw://cc23e0fbd23478567139e200094ae02a202125cef4bd8a3837dee0e2df32aa6b",
+				"dweb:/ipfs/QmPZC8Y9jH5cXiTMieqHHkTtzL4m1mWfVtLniV1uaExGcv"
 			]
 		}
 	},

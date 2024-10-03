@@ -22,25 +22,25 @@ contract EventTicketMiniTest{
         ticketPrice = _ticketPrice;
         startAt = block.timestamp;
         endAt = block.timestamp + 7;
-        timeRange = (endAt - startAl) / 60 / 60 / 24;
+        timeRange = (endAt - startAt) / 60 / 60 / 24;
     }
 
     function buyTicket (uint256 _ticketUnits) public returns(uint256 ticketId) {// payablle
 
         //require (msg.value) >= _ticketUnits * ticketPrice , "Not enough Ether sent. "
 
-        numberOfButTicket++;
+        numberOfBuyTicket++;
         totalAmountOfTickets += _ticketUnits;
         ticketId = numberOfBuyTicket;
-        grandTotal = totalAmountOfTickets * ticketPrice
+        grandTotal = totalAmountOfTickets * ticketPrice;
     } 
 
     function getNumberOfPurcahse() public view returns(uint256){
-        return numberOfButTicket;
+        return numberOfBuyTicket;
     }
 
     function getTotalNumberOfTickets () public view returns(uint256){
-        return getTotalNumberOfTickets;
+        return totalAmountOfTickets;
     }
 
     function getGrandTotal() public view returns(uint256){
