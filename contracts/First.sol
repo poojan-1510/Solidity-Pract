@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-contract Counter{
-    uint public count;
-    function increment() external {
-        count++;
-    }
-}
+// contract Counter{
+//     uint public count;
+//     function increment() external {
+//         count++;
+//     }
+// }
 
 contract EventTicketMiniTest{
     uint256 numberOfBuyTicket;
@@ -39,7 +39,7 @@ contract EventTicketMiniTest{
         return numberOfBuyTicket;
     }
 
-    function getTotalNumberOfTickets () public view returns(uint256){
+    function getTotalNumberOfTickets() public view returns(uint256){
         return totalAmountOfTickets;
     }
 
@@ -47,3 +47,5 @@ contract EventTicketMiniTest{
         return grandTotal;
     }
 }
+
+
